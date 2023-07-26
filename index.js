@@ -78,9 +78,8 @@ Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
 
 function cesitEkle(arr, str) {
   /*kod buraya*/
-  let newArray = [];
-  newArray.unshift(str, ...arr);
-  return newArray;
+  arr.unshift(str);
+  return arr;
 }
 
 /* Cörev 4:
@@ -97,10 +96,8 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 
 function sonCesitiKaldir(arr) {
   /*kod buraya*/
-  let newArray = [];
-  newArray.push(...arr);
-  newArray.pop();
-  return newArray;
+  arr.pop();
+  return arr;
 }
 
 /* Görev 5:
@@ -116,9 +113,7 @@ Aşağıdakileri yapmak için aşağıdaki indekstekiCesitiGetir işlevini kulla
 
 function indekstekiCesitiGetir(arr, num) {
   /*kod buraya*/
-  let newArray = [];
-  newArray.push(...arr);
-  return newArray[num];
+  return arr[num];
 }
 
 /* Görev 6:
@@ -139,11 +134,9 @@ Aşağıdakileri yapmak için ismeGoreCesitCikar işlevini kullanın:
 
 function ismeGoreCesitCikar(arr, str) {
   /*kod buraya*/
-  let newArray = [];
-  newArray.push(...arr);
-  let indexArray = newArray.indexOf(str);
-  newArray.splice(indexArray, 1);
-  return newArray;
+  let indexArray = arr.indexOf(str);
+  arr.splice(indexArray, 1);
+  return arr;
 }
 
 /* Görev 7:
